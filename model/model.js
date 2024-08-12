@@ -1,17 +1,17 @@
 const mongoose=require('mongoose');
-const alienSchema=new mongoose.Schema({
+const modelSchema=new mongoose.Schema({
     name:{
         type:String,
-        required:True
+        required:true
     },
     tech:{
         type:String,
-        required:True
+        required:true
     },
     sub:{
         type:String,
-        required:True
+        required:true
     }
 })
 
-module.exports=mongoose.model('Alien',alienSchema)
+module.exports=mongoose.model('Model',modelSchema)
